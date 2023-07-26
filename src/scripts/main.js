@@ -1,40 +1,41 @@
 // Imports go first
 import { makePottery } from "./PotteryWheel.js";
 import { firePottery } from "./Kiln.js";
+import { toSellOrNotToSell } from "./PotteryCatalog.js";
 
 // Make 5 pieces of pottery at the wheel
-let mug = makePottery("mug", 5, 3);
-console.log(mug);
+const mug = makePottery("mug", 5, 3);
 
-let plate = makePottery("plate", 8, 1);
-console.log(plate);
+const plate = makePottery("plate", 8, 1);
 
-let bowl = makePottery("bowl", 6, 2);
-console.log(bowl);
+const bowl = makePottery("bowl", 6, 2);
 
-let vase = makePottery("vase", 4, 7);
-console.log(vase);
+const vase = makePottery("vase", 4, 7);
 
-let teapot = makePottery("teapot", 7, 4);
-console.log(teapot);
+const teapot = makePottery("teapot", 7, 4);
 
 // Fire each piece of pottery in the kiln
 
-let firedMug = firePottery(mug, 2222);
-console.log(firedMug);
+firePottery(mug, 2199);
 
-let firedPlate = firePottery(plate, 3333);
-console.log(firedPlate);
+firePottery(plate, 3333);
 
-let firedBowl = firePottery(bowl, 2222);
-console.log(firedBowl);
+firePottery(bowl, 1000);
 
-let firedVase = firePottery(vase, 1111);
-console.log(firedVase);
+firePottery(vase, 1111);
 
-let firedTeapot = firePottery(teapot, 3333);
-console.log(firedTeapot);
+firePottery(teapot, 3333);
 
 // Determine which ones should be sold, and their price
 
+toSellOrNotToSell(mug);
+console.log(mug);
+
+toSellOrNotToSell(plate);
+
+toSellOrNotToSell(bowl);
+
+toSellOrNotToSell(vase);
+
+toSellOrNotToSell(teapot);
 // Invoke the component function that renders the HTML list
