@@ -7,7 +7,7 @@
 
 let potteryKey = 1;
 
-export const makePottery = (shape, height, weight) => {
+export const makePottery = (shape, weight, height) => {
   const potteryPiece = {
     shape: shape,
     weight: weight,

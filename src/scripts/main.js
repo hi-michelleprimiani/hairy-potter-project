@@ -5,7 +5,7 @@ import { toSellOrNotToSell, usePottery } from "./PotteryCatalog.js";
 import { PotteryList } from "./PotteryList.js";
 
 // Make 5 pieces of pottery at the wheel
-const mug = makePottery("mug", 5, 3);
+const mug = makePottery("mug", 8, 10);
 const plate = makePottery("plate", 8, 1);
 const bowl = makePottery("bowl", 6, 2);
 const vase = makePottery("vase", 4, 7);
