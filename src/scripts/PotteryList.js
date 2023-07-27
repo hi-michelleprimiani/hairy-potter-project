@@ -6,17 +6,17 @@ import { usePottery } from "./PotteryCatalog.js";
 
 export const PotteryList = () => {
   let usedPottery = usePottery();
-  let HTMLstring = `<article class="potteryCatalog">`;
+  let HTMLstring = ``;
 
   for (const items of usedPottery) {
-    HTMLstring += `<section class="pottery" id="pottery--1">
+    HTMLstring += `<section class="pottery" id="pottery--${items.id}">
         <h2 class="pottery__shape">${items.shape}</h2>
         <div class="pottery__properties">
-          Item weighs ${items.weight} and is ${items.height} in height
+          Item weighs ${items.weight} grams and is ${items.height} cm in height
         </div>
-        <div class="pottery__price">Price is ${items.price}</div>
+        <div class="pottery__price">Price is $${items.price}</div>
       </section>`;
   }
-  HTMLstring += `</article>`;
+  HTMLstring += ``;
   return HTMLstring;
 };
