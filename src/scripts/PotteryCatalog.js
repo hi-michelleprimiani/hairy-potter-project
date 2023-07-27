@@ -19,6 +19,5 @@ export const toSellOrNotToSell = (pottery) => {
 };
 
 export const usePottery = () => {
-  let copySoldPottery = soldPottery.slice();
-  return copySoldPottery;
+  return soldPottery;
 };
